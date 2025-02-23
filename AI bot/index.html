@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yura - Your AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="logo">Yura</div>
+        <div class="nav-icons">
+            <i class="fas fa-cog"></i>  <!-- Settings Icon -->
+            <i class="fas fa-bars"></i>  <!-- Menu Icon -->
+        </div>
+    </nav>
+    
+
+    <!-- 🔹 CHAT CONTAINER -->
+    <div id="chat-container">
+        <div id="chatbox"></div>
+
+        <!-- 🔹 INPUT FIELD -->
+        <div class="input-container">
+            <input type="text" id="userInput" onkeypress="handleKeyPress(event)" placeholder="Chat with Yura...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>© 2024 Yura Chatbot | Powered by AI</p>
+        <div class="footer-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </footer>
+    
+
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
